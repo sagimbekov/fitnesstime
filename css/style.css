@@ -1,0 +1,389 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 33px 15px;
+}
+
+body{
+	font-family: 'Oswald', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+/*HEADER*/
+
+header {
+    background: #202020;
+    color: #fff;
+}
+
+.header-logo a{
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.container:before, .container:After {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.header-nav ul {
+    display: flex;
+    font-size: 14px;
+}
+
+.header-nav li{
+	margin-left: 10px;
+}
+
+.header-nav a {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    line-height: 33px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.header-nav a:hover{
+	color: #e25050;
+}
+
+.header-nav a.active {
+    background: #e25050;
+    color: #fff;
+}
+
+.header-nav a.active:hover {
+	color: #fff;
+}
+
+
+.d-flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*MAIN*/
+
+.top-phone {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: transparent;
+    padding: 0 15px;
+    position: relative;
+}
+
+.top-phone a {
+    position: absolute;
+    display: block;
+    right: 15px;
+    background: #e25050;
+    color: #fff;
+    text-decoration: none;
+    padding-right:30px;
+    line-height: 37px;
+    font-size: 14px;
+    padding-left: 60px;
+}
+
+.top-phone a span{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 37px;
+	background: #bd4141 url(../img/call-ico.png) center center no-repeat;
+}
+
+.slide{
+	/*display: none;*/
+}
+
+.slide.active{
+	display: block;
+	opacity: 1;
+}
+
+
+.slide-left h3 {
+    transform: translateY(100%);
+    transition: all .3s ease-out;
+}
+
+.slide-left h1 {
+    transform: translateY(100%);
+    transition: all .6s ease-out;
+}
+
+.slide-left h2 {
+    transform: translateY(100%);
+    transition: all .9s ease-out;
+}
+
+.active .slide-left *{
+	transform:  translateY(0);
+}
+
+
+.slide1{
+	background: url(../img/slide2.jpg) center top/cover no-repeat;
+}
+
+.slide2{
+	background: url(../img/slide1.jpg) center top/cover no-repeat;
+}
+
+.slide-left{
+	min-height: 580px;
+	padding-top: 200px;
+	position: relative;
+	z-index: 9;
+}
+
+.slider-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.slider-control{
+	cursor: pointer;
+}
+
+.slider-control:hover{
+	opacity: 0.8;
+}
+
+.slide-left h3 {
+    background: rgba(226, 80, 80, 0.9);
+    display: inline-block;
+    padding: 12px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.slide-left h1 {
+    background: rgba(32, 32, 32, 0.9);
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+
+.slide-left h2 {
+    background: rgba(32, 32, 32, 0.9);
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+/*TRAINERS*/
+
+.trainers{
+	background: url(../img/training-bgv2.jpg) center center/cover no-repeat;
+	min-height: 500px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    margin: 20px 0 60px;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: -10px;
+}
+
+.row.trainers-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainer {
+    background: #fff;
+    position: relative;
+    height: 315px;
+    width: 24%;
+    overflow: hidden;
+}
+
+.trainer-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 240px;
+    padding: 15px 20px 20px;
+    background: #fff;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.trainer:hover .trainer-content {
+    top: 0;
+}
+
+.trainer-content p {
+    font-size: 13px;
+    color: #777777;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.trainer-img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 240px;
+	background: url(../img/trainer1.jpg) center center/cover no-repeat;
+}
+
+.trainer-content h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #202020;
+    line-height: 24px;
+}
+
+.trainer-content h3 {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: #afafaf;
+    margin-bottom: 40px;
+    transition: all .5s ease-in-out;
+}
+
+.trainer:hover .trainer-content h3{
+	margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px){
+	
+	.header-nav ul{
+		display: none;
+	}
+	
+	.header-nav{
+		width: 20px;
+		height: 20px;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		position: relative;
+	}
+
+	.header-nav:before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		top: calc(50% - 0.5px);
+		height: 1px;
+		background: #fff;
+	}
+	
+	.row.trainers-b {
+	    display: block;
+	}
+
+	.trainer {
+	    float: left;
+	    width: 48%;
+	    margin: 1%;
+	}
+}
+
+@media (max-width: 420px){
+
+	.trainer {
+	    float: none;
+	    width: 100%;
+	    margin: 20px 0;
+	}
+
+	.slide1 {
+	    background: url(../img/slide2.jpg) 61% top/cover no-repeat;
+	}
+
+}
