@@ -63,6 +63,21 @@ body{
 header {
     background: #202020;
     color: #fff;
+    position: relative;
+    z-index: 100;
+}
+
+header.fixed-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100px;
+    z-index: 99;
+    transition: all .2s ease-out;
+}
+
+header.fixed-header.show-header{
+    top: 0;
 }
 
 .header-logo a{
@@ -121,12 +136,17 @@ header {
 
 /*MAIN*/
 
+main{
+    position: relative;
+}
+
 .top-phone {
     max-width: 1200px;
     margin: 0 auto;
     background: transparent;
     padding: 0 15px;
     position: relative;
+    z-index: 2;
 }
 
 .top-phone a {
@@ -161,7 +181,7 @@ header {
 }
 
 
-.slide-left h3 {
+/*.slide-left h3 {
     transform: translateY(100%);
     transition: all .3s ease-out;
 }
@@ -178,7 +198,7 @@ header {
 
 .active .slide-left *{
 	transform:  translateY(0);
-}
+}*/
 
 
 .slide1{
